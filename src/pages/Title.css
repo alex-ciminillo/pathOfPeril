@@ -1,0 +1,98 @@
+
+@font-face {
+    font-family: 'Treasure';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./../../public/assets/treasure.ttf');
+  }
+
+.title-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url("./../../public/assets/parch.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+    z-index: -1;
+}
+
+.title-title {
+    font-size: 50px;
+    font-family: Treasure;
+    color: white;
+    text-shadow: -2px 3px 4px #000000;
+    margin-top: -40px;
+
+    z-index: 2;
+}
+
+.title-title > div:first-child {
+    margin-left: 80px;
+}
+
+.title-title > div:last-child {
+    font-size: 110px;
+    margin-top: -20px;
+}
+
+.title-title-img {
+    opacity: 0.6;
+    width: 190%;
+    margin-right: 80%;
+    object-fit: fill;
+    margin-top: -100px;
+    z-index: 1;
+}
+
+.title-start {
+
+    margin-top: 40px;
+
+    color: black;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    font-size: 30px;
+    font-family: Treasure;
+
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.75);
+}
+
+.title-start > div {
+    padding-top: 5px;
+}
+
+.title-start-clicked {
+
+    margin-top: 45px;
+    margin-right: 5px;
+
+    color: black;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    font-size: 30px;
+    font-family: Treasure;
+
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.75) inset;
+}
+
+
+.title-start-height {
+    height: 50px;
+}

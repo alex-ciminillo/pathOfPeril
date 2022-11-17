@@ -1,0 +1,172 @@
+
+:root {
+    --main-font: rgba(0, 0, 0, 0.8);
+  
+  }
+
+.character-creation-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url("./../../public/assets/parch.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+    z-index: -1;
+
+    padding-top: var(--ion-safe-area-top);
+}
+
+
+.character-creation-profile {
+    opacity: .7;
+    height: 35%;
+    width: 90%;
+    overflow: hidden;
+}
+
+.character-creation-profile > img {
+    width: 100%;
+    mask-image: linear-gradient(to top, transparent 20%, black 40%);
+
+}
+
+.character-creation-name {
+    max-width: 38%;
+    height: 60%;
+    outline: none;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.488);
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.character-creation-name input {
+    background-color: transparent;
+    box-sizing: border-box;
+    width: 100% ;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 21px;
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+    padding-right: 0px;
+    margin-left: -5px;
+}
+
+.character-creation-name input::placeholder {
+    color: rgba(0, 0, 0, 0.629);
+    
+}
+
+.character-creation-dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+    
+}
+
+.character-creation-dropdown select {
+    background-color: rgba(180, 150, 90, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.488);
+    outline: none;
+    margin: 10px;
+    border-radius: 5px;
+    
+}
+
+
+
+.character-creation-attributes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    color: var(--main-font)
+}
+
+.character-creation-attributes-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.character-creation-attributes-button-top {
+    font-size: 25px;
+}
+
+.character-creation-attributes-button-bottom {
+    font-size: 25px;
+}
+
+.character-creation-attributes-number {
+    font-size: 25px;
+    margin: -5px 0px;
+}
+
+.character-creation-attributes-number-bonus {
+    color: green;
+}
+
+.character-creation-attributes-text {
+    font-size: 22px;
+}
+
+.character-creation-points {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    color: var(--main-font);
+    padding: 10px 0px;
+}
+
+.character-creation-points > div {
+    padding: 0px 5px;
+}
+
+.character-creation-skills-container {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0px 10px 0px;
+    font-size: 19px;
+    color: var(--main-font);
+}
+
+.character-creation-skills-container > div {
+    margin: 0px 5px;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+.character-creation-skills-not-clicked {
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.75);
+}
+
+.character-creation-skills-clicked {
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.75) inset;
+}
+
+.character-creation-description-details {
+    font-size: 18px;
+}
+
+.character-creation-description {
+    width: 92%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
